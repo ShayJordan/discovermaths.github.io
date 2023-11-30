@@ -33,9 +33,10 @@
 
 .masthead__menu {
 
+  position: sticky;
+  left: 100%;
+
   ul {
-    position: sticky;
-    left: 100%;
     margin: 0;
     padding: 0;
     clear: both;
@@ -49,7 +50,7 @@
   white-space: nowrap;
 
   &--lg {
-    padding-right: 50%;
+    padding-right: 2em;
     font-weight: 700;
   }
 }
