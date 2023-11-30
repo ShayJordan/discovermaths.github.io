@@ -32,6 +32,8 @@
 }
 
 .masthead__menu {
+  -webkit-box-pack: start;
+   justify-content: flex-start;
 
   ul {
     margin: 0;
