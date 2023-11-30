@@ -1,0 +1,27 @@
+---
+layout: archive
+permalink: /year-archive/
+title: "Blog Posts"
+excerpt: "A selection of blog posts I've written over the years on various topics from Martial Arts to Mathematics, and everything in between."
+header:
+  overlay_image: KSW_Promotion.JPG
+  overlay_filter: rgba(51, 51, 90, 0.75)
+author_profile: true
+og_image: og_image.png
+redirect_from:
+  - /wordpress/blog-posts/
+---
+<div class="notice">
+  Many of these were originally published in other places, including my old personal blog and the <a href="https://kuksoolwonlowestoft.co.uk/blog/">Kuk Sool Won of Lowestoft blog</a>.
+</div>
+
+{% include base_path %}
+{% capture written_year %}'None'{% endcapture %}
+{% for post in site.posts %}
+  {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
+  {% if year != written_year %}
+    <h2 id="{{ year | slugify }}" class="archive__subtitle">{{ year }}</h2>
+    {% capture written_year %}{{ year }}{% endcapture %}
+  {% endif %}
+  {% include archive-single.html %}
+{% endfor %}

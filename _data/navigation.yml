@@ -1,10 +1,26 @@
-# main links
+# main links links
 main:
-  # - title: "About"
-  #   url: /about/
-  # - title: "Sample Posts"
-  #   url: /year-archive/
-  # - title: "Sample Collections"
-  #   url: /collection-archive/
-  # - title: "Sitemap"
-  #   url: /sitemap/
+
+#  - title: "CV"
+#   url: /files/ShayCV.pdf
+
+#  - title: "Blog"
+#    url: /year-archive/
+
+#  - title: "Projects"
+#    url: /projects/
+
+#  - title: "Talks"
+#    url: /talks/    
+
+#  - title: "Teaching"
+#    url: /teaching/    
+    
+#  - title: "Portfolio"
+#    url: /portfolio/
+    
+#  - title: "Downloads"
+#    url: /downloads/
+    
+#  - title: "Guide"
+#    url: /markdown/
