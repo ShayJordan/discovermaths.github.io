@@ -5,10 +5,10 @@ excerpt: ""
 header:
   overlay_image: projects.JPG
   overlay_filter: rgba(51, 51, 90, 0.75)
-author_profile: true
+author_profile: false
 og_image: og_image.png
-layout: home
+layout: single
 ---
 
-This site is under construction.
+This site is under construction.{: .align-center}
 ------
