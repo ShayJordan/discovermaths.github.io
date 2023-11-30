@@ -1,8 +1,8 @@
 # main links links
 main:
 
-#  - title: "CV"
-#   url: /files/ShayCV.pdf
+  - title: "About Us"
+   url: /about/
 
 #  - title: "Blog"
 #    url: /year-archive/
