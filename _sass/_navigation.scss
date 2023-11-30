@@ -314,12 +314,12 @@
    ========================================================================== */
 
 .nav__list {
-  position: absolute;
-  left: 100%;
   font-size: 1.25rem;
 
   ul {
     margin-bottom: 1em;
+	position: sticky;
+    left: 100%;
   }
 
   a {
