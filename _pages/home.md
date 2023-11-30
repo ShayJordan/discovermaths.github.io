@@ -7,7 +7,7 @@ header:
   overlay_filter: rgba(51, 51, 90, 0.75)
 author_profile: false
 og_image: og_image.png
-layout: wide
+layout: home
 ---
 
 This site is under construction.
