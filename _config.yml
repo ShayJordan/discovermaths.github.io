@@ -9,13 +9,12 @@
 locale                   : "en-GB"
 title                    : "Discover Maths"
 title_separator          : "-"
-name                     : &name "Shay Jordan"
-description              : &description "The personal website of Shay Jordan."
+name                     : &name "Discover Maths"
+description              : &description ""
 url                      : https://discovermaths.uk # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "ShayJordan/discovermaths.github.io"
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
-masthead_title           : " "
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 150
 future                   : false
