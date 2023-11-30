@@ -42,6 +42,8 @@
 }
 
 .masthead__menu-item {
+  position: relative;
+  left: 100%;
   display: block;
   list-style-type: none;
   white-space: nowrap;
