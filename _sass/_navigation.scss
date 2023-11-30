@@ -203,6 +203,8 @@
 
   .visible-links {
     display: table;
+	-webkit-box-pack: start;
++    justify-content: flex-start;
 
     li {
       display: table-cell;
