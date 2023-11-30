@@ -5,7 +5,7 @@ excerpt: ""
 header:
   overlay_image: downloads.JPG
   overlay_filter: rgba(51, 51, 90, 0.75)
-author_profile: false
+author_profile: true
 og_image: og_image.png
 ---
 

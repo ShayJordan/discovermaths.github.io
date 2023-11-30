@@ -80,29 +80,29 @@ analytics:
 
 # Site Author
 author:
-  name             : "Shay Jordan"
-  avatar           : "KSW_Archery.png"
-  bio              : "Master of Mathematics Graduate"
+  name             : "Discover Maths"
+  avatar           : "globe.png"
+  bio              : "Workshops and Tutoring for Mathematics"
   location         : "Norwich, UK"
   employer         : 
   pubmed           : 
   googlescholar    : 
-  email            : "shay@shayjordan.co.uk"
+  email            : "hello@discovermaths.uk"
   researchgate     : 
   uri              :
   bitbucket        :
   codepen          :
   dribbble         :
   flickr           :
-  facebook         :
+  facebook         : "discovermathsuk"
   foursquare       :
   github           : 
   google_plus      :
   keybase          :
-  instagram        : "sh4yj"
+  instagram        : "discovermathsuk"
   impactstory      : 
   lastfm           :
-  linkedin         : "shayjordan"
+  linkedin         : 
   orcid            : 
   pinterest        :
   soundcloud       :
@@ -113,7 +113,7 @@ author:
   vine             :
   weibo            :
   xing             :
-  youtube          : "shayj"
+  youtube          : 
   wikipedia        :
 
 
