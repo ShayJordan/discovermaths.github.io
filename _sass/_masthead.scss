@@ -34,8 +34,6 @@
 .masthead__menu {
 
   ul {
-    position: absolute;
-	right: 0;
     margin: 0;
     padding: 0;
     clear: both;
@@ -44,6 +42,8 @@
 }
 
 .masthead__menu-item {
+  position: absolute;
+  right: 0;
   display: block;
   list-style-type: none;
   white-space: nowrap;
