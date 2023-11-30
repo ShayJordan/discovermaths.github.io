@@ -32,6 +32,15 @@
 }
 
 .masthead__menu {
+  width: 100%;
+
+  .site-nav {
+    margin-left: 0;
+
+    @include breakpoint($small) {
+      float: right;
+    }
+  }
 
   ul {
     margin: 0;
