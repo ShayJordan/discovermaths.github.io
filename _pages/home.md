@@ -1,6 +1,7 @@
 ---
 permalink: /
-title: "Discover Maths"
+title: "Home"
+masthead_title: " "
 excerpt: ""
 #header:
 #  overlay_image: home.JPG
