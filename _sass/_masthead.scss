@@ -34,6 +34,8 @@
 .masthead__menu {
 
   ul {
+    position: sticky;
+    left: 100%;
     margin: 0;
     padding: 0;
     clear: both;
@@ -42,8 +44,6 @@
 }
 
 .masthead__menu-item {
-  position: sticky;
-  left: 100%;
   display: block;
   list-style-type: none;
   white-space: nowrap;
