@@ -10,5 +10,4 @@ og_image: og_image.png
 layout: single
 ---
 
-This site is under construction.{: .align-center}
-------
+<h1 style="text-align: center;">This site is under construction.</h1>
