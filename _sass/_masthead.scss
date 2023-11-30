@@ -42,13 +42,12 @@
 }
 
 .masthead__menu-item {
+  right: 0;
   display: block;
   list-style-type: none;
   white-space: nowrap;
 
   &--lg {
-    position: absolute;
-    right: 0;
     padding-right: 2em;
     font-weight: 700;
   }
