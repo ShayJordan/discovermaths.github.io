@@ -49,8 +49,7 @@
   white-space: nowrap;
 
   &--lg {
-    position: relative;
-    right: 100%;
+    position: absolute;
     padding-right: 2em;
     font-weight: 700;
   }
