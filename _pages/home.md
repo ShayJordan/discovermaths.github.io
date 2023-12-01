@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Welcome!"
+title: "We're not ready yet!"
 excerpt: ""
 header:
   overlay_image: projects.JPG
