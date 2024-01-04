@@ -376,14 +376,14 @@
 
 .sagecell_options {
     display: inline-block !important;
-    margin-right: 0px !important;
+    margin-right: 2px !important;
     float: right !important;
     text-align: right !important;
     font-size: 80% !important;
 }
 
 .sagecell_fullScreen {
-    position: absolute !important;
+    position: sticky !important;
 	height: 0px !important;
 	width: 0px !important;
     right: 0em !important;
@@ -394,7 +394,7 @@
 }
 
 .sagecell_editor div.ui-accordion-content.ui-helper-reset {
-    padding: 0em 0em !important;
+    padding: 1em 0.5em !important;
     font-size: 90.9% !important;
 }
 
