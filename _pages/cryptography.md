@@ -22,15 +22,15 @@ In order to use any of the encryption techniques we looked at in the workshop, w
 
 ||||||||||||||
 |:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
-| A | B | C | D | E | F | G | H | I | J | K | L | M |
+| **A** | **B** | **C** | **D** | **E** | **F** | **G** | **H** | **I** | **J** | **K** | **L** | **M** |
 | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 |
-| N | O | P | Q | R | S | T | U | V | W | X | Y | Z |
+| **N** | **O** | **P** | **Q** | **R** | **S** | **T** | **U** | **V** | **W** | **X** | **Y** | **Z** |
 | 13 | 14 | 15 | 16 | 17 | 18 | 19 | 20 | 21 | 22 | 23 | 24 | 25 |
 
 **Example:** If we wanted to encode the word "hello", for example, we would do so by replacing the letters by their corresponding numbers in the table above:
 {: .notice}
 
-| H | E | L | L | O |
+| **H** | **E** | **L** | **L** | **O** |
 |:-:|:-:|:-:|:-:|:-:|
 | 7 | 4 | 11 | 11 | 14 |
 
@@ -53,13 +53,13 @@ Caesar Shift Ciphers are named after Julius Caesar, the roman emperor, who encry
 **Example:** If we choose the key number to be 15 and want to encrypt the plaintext "hello" using a Caesar Shift Cipher, it would work like this:
 {: .notice}
 
-|            | H   | E   | L   | L   | O   |
-|:-:         |:-:  |:-:  |:-:  |:-:  |:-:  |
-| Encoded    | 7   | 4   | 11  | 11  | 14  |
-| Key        | +15 | +15 | +15 | +15 | +15 |
-| Encrypted  | 22  | 19  | 26  | 26  | 29  |
-| Mod 26     | 22  | 19  | 0   | 0   | 3   |
-| Ciphertext | W   | T   | A   | A   | D   |
+|                | H   | E   | L   | L   | O   |
+|:-:             |:-:  |:-:  |:-:  |:-:  |:-:  |
+| **Encoded**    | 7   | 4   | 11  | 11  | 14  |
+| **Key**        | +15 | +15 | +15 | +15 | +15 |
+| **Encrypted**  | 22  | 19  | 26  | 26  | 29  |
+| **Mod 26**     | 22  | 19  | 0   | 0   | 3   |
+| **Ciphertext** | W   | T   | A   | A   | D   |
 
 This is a test of embedding SageMathCell to a webpage!
 
