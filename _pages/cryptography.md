@@ -10,6 +10,7 @@ og_image: og_image.png
 ---
 <script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script>
 <script>sagecell.makeSagecell({"inputLocation": ".sage"});</script>
+<link rel="stylesheet" type="text/css" href="https://discovermaths.uk/files/sagecell_embed.css">
 
 This is a test of embedding SageMathCell to a webpage!
 
