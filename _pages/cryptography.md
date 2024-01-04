@@ -24,3 +24,11 @@ for i in range(26):
 	print(i, "mod 26 =", x)
 	</script></pre>
 </div>
+
+<div class="sage">
+	<pre><script type="text/x-sage">
+for i in (1,3,5,7,11,17,25):
+    x = inverse_mod(i,26)
+    print("Inverse of", i, "is", x)
+	</script></pre>
+</div>
