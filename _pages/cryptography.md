@@ -43,7 +43,7 @@ In the workshop, we looked at a few different methods of encryption and their re
 
 ## Caesar Shift Ciphers
 
-Caesar Shift Ciphers are named after Julius Caesar, the roman emperor, who encrypted secret messages to his army generals in this way. This is how it's done:
+Caesar Shift Ciphers are named after Julius Caesar, the Roman emperor, who encrypted secret messages to his army generals in this way. This is how it's done:
 
 1. Convert your message into numbers (encode).
 2. Choose a key number.
@@ -60,6 +60,29 @@ Caesar Shift Ciphers are named after Julius Caesar, the roman emperor, who encry
 | **Encrypted**  | 22  | 19  | 26  | 26  | 29  |
 | **Mod 26**     | 22  | 19  | 0   | 0   | 3   |
 | **Ciphertext** | W   | T   | A   | A   | D   |
+
+So "hello" would encrypt to the ciphertext "wtaad".
+{: .notice}
+
+If you know what they encryption key was, you just work backwards to decrypt (encode the ciphertext, subtract the key, reduce modulo 26, and then decode). If you *don't* know the shift key, you might need to use a bit of [frequency analysis](https://crypto.interactive-maths.com/frequency-analysis-breaking-the-code.html) or knowledge of common word endings, letter combinations or short words within the language you're working in to figure out the key.
+
+## Affine Ciphers
+
+An affine cipher is like a Caesar shift cipher, but with an added layer of complexity. Instead of shifting everything by a constant value, we shift by an *affine* function in the form $ax+b$.
+
+**Example:** If we encrypt the plaintext "hello" using the affine function $3x+2$, it would work like this:
+{: .notice}
+
+|                      | H   | E   | L   | L   | O   |
+|:-:                   |:-:  |:-:  |:-:  |:-:  |:-:  |
+| **Encoded ($x$)**    | 7   | 4   | 11  | 11  | 14  |
+| **$3x$**             | 21  | 12  | 33  | 33  | 42  |
+| **$+2$**             | 23  | 14  | 35  | 35  | 44  |
+| **Mod 26**           | 23  | 14  | 9   | 9   | 18  |
+| **Ciphertext**       | X   | O   | J   | J   | S   |
+
+So "hello" would encrypt to the ciphertext "xojjs".
+{: .notice}
 
 This is a test of embedding SageMathCell to a webpage!
 
