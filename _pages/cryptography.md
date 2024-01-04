@@ -16,7 +16,9 @@ sagecell.makeSagecell({inputLocation: '.sage',
 </script>
 <link rel="stylesheet" type="text/css" href="https://discovermaths.uk/files/sagecell_embed.css">
 
-This is the basic encoding we used in the workshop, to convert letters to numbers:
+# Encoding and Decoding
+
+In order to use any of the encryption techniques we looked at in the workshop, we first needed to *encode* our plaintext message from letters into numbers. This is the basic encoding we used in the workshops:
 
 | A | B | C | D | E | F | G | H | I | J | K | L | M | 
 |:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
