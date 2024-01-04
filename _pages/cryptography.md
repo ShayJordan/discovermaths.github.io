@@ -34,7 +34,7 @@ In order to use any of the encryption techniques we looked at in the workshop, w
 |:-:|:-:|:-:|:-:|:-:|
 | 7 | 4 | 11 | 11 | 14 |
 
-So the word "hello" is encoded to 7 4 11 11 14.
+So the plaintext "hello" is encoded to 7 4 11 11 14.
 {: .notice}
 
 ## Encrypting and Decrypting
@@ -62,7 +62,7 @@ Caesar Shift Ciphers are named after Julius Caesar, the Roman emperor, who encry
 | **Mod 26**     | 22  | 19  | 0   | 0   | 3   |
 | **Ciphertext** | W   | T   | A   | A   | D   |
 
-So "hello" is encrypted to the ciphertext "wtaad".
+So the plaintext "hello" is encrypted to the ciphertext "wtaad".
 {: .notice}
 
 If you know what they encryption key was, you just work backwards to decrypt (encode the ciphertext, subtract the key, reduce modulo 26, and then decode). If you *don't* know the shift key, you might need to use a bit of [frequency analysis](https://crypto.interactive-maths.com/frequency-analysis-breaking-the-code.html) or knowledge of common word endings, letter combinations or short words within the language you're working in to figure out the key.
@@ -82,7 +82,7 @@ An affine cipher is like a Caesar shift cipher, but with an added layer of compl
 | **Mod 26**           | 23  | 14  | 9   | 9   | 18  |
 | **Ciphertext**       | X   | O   | J   | J   | S   |
 
-So "hello" is encrypted to the ciphertext "xojjs".
+So the plaintext "hello" is encrypted to the ciphertext "xojjs".
 {: .notice}
 
 Decrypting affine ciphers is more complex. We're used to being able to find inverses of functions quite easily by working backwards and applying the inverses of each individual operation in the function in reverse BIDMAS order. Using our prior knowledge of functions, we could find the inverse of the function $3x+2$ to be $\frac{1}{3}(x-2)$. 
@@ -163,7 +163,7 @@ This tells us how much to shift each letter of our message by when encrypting. T
 | **Mod 26**     | 14  | 18  | 21  | 22  | 2   | 20  | 7   |
 | **Ciphertext** | O   | S   | V   | W   | C   | U   | H   |
 
-So "message" is encrypted to the ciphertext "osvwcuh".
+So the plaintext "message" is encrypted to the ciphertext "osvwcuh".
 {: .notice}
 
 ### Public Key Cryptography: RSA
