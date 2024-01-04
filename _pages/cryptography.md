@@ -14,8 +14,10 @@ og_image: og_image.png
 
 This is a test of embedding SageMathCell to a webpage.
 
-<div class="sage">{hide: "fullScreen"}
-  <script type="text/x-sage">for i in range(26):</script>
-  <script type="text/x-sage">  x = (2 * i) % 26</script>
-  <script type="text/x-sage">  print(x)</script>
+<div class="sage">{hide: ["fullScreen"]}
+  <script type="text/x-sage">
+  for i in range(26): <br>
+    x = (2 * i) % 26 <br>
+    print(x)
+  </script>
 </div>
