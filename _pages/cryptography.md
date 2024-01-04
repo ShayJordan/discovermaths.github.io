@@ -5,7 +5,7 @@ excerpt: "A summary of the content covered in the Discover Maths Cryptography wo
 header:
   overlay_image: projects.JPG
   overlay_filter: rgba(51, 51, 90, 0.75)
-author_profile: true
+author_profile: false
 og_image: og_image.png
 ---
 <script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script>
@@ -91,7 +91,7 @@ So the plaintext "hello" is encrypted to the ciphertext "xojjs".
 
 Decrypting affine ciphers is more complex. We're used to being able to find inverses of functions quite easily by working backwards and applying the inverses of each individual operation in the function in reverse BIDMAS order. Using our prior knowledge of functions, we could find the inverse of the function $3x+2$ to be $\frac{1}{3}(x-2)$. 
 
-Unfortunately when working Modulo 26 (or Modulo anything for that matter), fractions don't exist -- we only have the integers from 0 to 25 (or 0 to $n-1$ for Mod $n$). With this, we need to find the *multiplicative inverse* of 3 mod 26 in order to find the decrypying function; that is, the number we can multiply by 3 to get 1 mod 26. This can be found quite easily, as $3*9=27\equiv1\text{ mod }26$. This means that the inverse function would actually be $9(x-2)$ or $9x-18$ if we expand it.
+Unfortunately when working Modulo 26 (or Modulo anything for that matter), fractions don't exist -- we only have the integers from 0 to 25 (or 0 to $n-1$ for Mod $n$). With this, we need to find the *multiplicative inverse* of 3 mod 26 in order to find the decrypying function; that is, the number we can multiply by 3 to get 1 mod 26. This can be found quite easily, as $3\times9=27\equiv1\text{ mod }26$. This means that the inverse function would actually be $9(x-2)$ or $9x-18$ if we expand it.
 
 **Example:** We can work backwards from the ciphertext we found above to check this is correct.
 {: .notice}
