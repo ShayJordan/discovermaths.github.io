@@ -132,4 +132,38 @@ Have a play around with the code above and chance the 2 to any other non-inverti
 
 ### Vigenère Cipher
 
+For a long time, the Vigenère Cipher was regarded to be unbreakable. It's very simple to encrypt something using this cipher, but unless you know the key, it's very difficult to decrypt. The Vigenère Cipher works as follows:
+
+1. Convert your message into numbers (encode).
+2. Choose a password.
+3. Encode your password.
+4. Shift the first letter of your encoded plaintext by the value of the first letter in the password (shift).
+4. Shift the second letter of your encoded plaintext by the value of the second letter in the password (shift).
+5. Continue on until you reach the end of your password.
+6. Move back to the start of your password and shift the next letter of your encoded plaintext by the value of the first letter in the password (shift).
+7. Repeat steps 5 and 6 until your message has been encrypted.
+8. Convert your message back to letters (decode).
+
+**Example:** If we choose the password to be "code" and want to encrypt the plaintext "Message" using a Caesar Shift Cipher, we would first encode our password:
+{: .notice}
+
+|                | C   | O   | D   | E   |
+|:-:             |:-:  |:-:  |:-:  |:-:  |
+| **Encoded**    | 2   | 14  | 3   | 4   |
+
+This tells us how much to shift each letter of our message by when encrypting. The encryption works like this:
+{: .notice}
+
+|                | M   | E   | S   | S   | A   | G   | E   |
+|:-:             |:-:  |:-:  |:-:  |:-:  |:-:  |:-:  |:-:  |
+| **Encoded**    | 12  | 4   | 18  | 18  | 0   | 6   | 4   |
+| **Password**   | C   | O   | D   | E   | C   | O   | D   |
+| **Shift**      | +2  | +14 | +3  | +4  | +2  | +14 | +3  |
+| **Encrypted**  | 14  | 18  | 21  | 22  | 2   | 20  | 7   |
+| **Mod 26**     | 14  | 18  | 21  | 22  | 2   | 20  | 7   |
+| **Ciphertext** | O   | S   | V   | W   | C   | U   | H   |
+
+So "message" is encrypted to the ciphertext "osvwcuh".
+{: .notice}
+
 ### Public Key Cryptography: RSA
