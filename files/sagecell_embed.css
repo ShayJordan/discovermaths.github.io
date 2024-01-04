@@ -466,7 +466,8 @@
 }
 
 .sagecell .sagecell-templates .hide {
- display: none !important;   
+ display: none !important;  
+ fullScreen !important; 
 }
 
 .sagecell .sagecell-templates .pull-right {
