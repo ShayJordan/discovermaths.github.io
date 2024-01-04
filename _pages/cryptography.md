@@ -16,11 +16,13 @@ sagecell.makeSagecell({inputLocation: '.sage'});
 </script>
 <link rel="stylesheet" type="text/css" href="https://discovermaths.uk/files/sagecell_embed.css">
 
-Thank you for attending the Discover Maths Cryptography workshop -- we hope you enjoyed it and discovered some interesting new ways that the maths you're learning in the classroom can be applied in the real world. Here is a recap of some of the content we covered in the workshop, in case you want to come back to it...
+Thank you for attending the Discover Maths Cryptography workshop -- we hope you enjoyed it and discovered some interesting new ways that the maths you're learning in the classroom can be applied in the real world. 
+
+Here is a recap of some of the content we covered in the workshop, in case you want to come back to it...
 
 ## Encoding and Decoding
 
-In order to use any of the encryption techniques we looked at in the workshop, we first needed to *encode* our plaintext message from letters into numbers. This is the basic encoding we used in the workshops:
+In order to use any of the encryption techniques we looked at in the workshop, we first needed to encode our plaintext message from letters into numbers. This is the basic encoding we used in the workshops:
 
 <figure>
 	<a href="/images/encoding-table-1.png"><img src="/images/encoding-table-1.png"></a>
