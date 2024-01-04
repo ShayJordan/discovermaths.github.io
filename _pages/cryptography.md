@@ -27,13 +27,15 @@ In order to use any of the encryption techniques we looked at in the workshop, w
 | N | O | P | Q | R | S | T | U | V | W | X | Y | Z |
 | 13 | 14 | 15 | 16 | 17 | 18 | 19 | 20 | 21 | 22 | 23 | 24 | 25 |
 
-**Example:** If we wanted to encode the word "hello", for example, we would do so by replacing the letters by their corresponding numbers in the table above:{: .notice}
+**Example:** If we wanted to encode the word "hello", for example, we would do so by replacing the letters by their corresponding numbers in the table above:
+{: .notice}
 
 | H | E | L | L | O |
 |:-:|:-:|:-:|:-:|:-:|
 | 7 | 4 | 11 | 11 | 14 |
 
-So the word "hello" is encoded to 7 4 11 11 14.{: .notice}
+So the word "hello" is encoded to 7 4 11 11 14.
+{: .notice}
 
 # Encrypting and Decrypting
 
@@ -48,7 +50,8 @@ Caesar Shift Ciphers are named after Julius Caesar, the roman emperor, who encry
 3. Add the key number to each number (shift).
 4. Convert your message back to letters (decode).
 
-**Example:** If we choose the key number to be 15 and want to encrypt the plaintext "hello" using a Caesar Shift Cipher, it would work like this:{: .notice}
+**Example:** If we choose the key number to be 15 and want to encrypt the plaintext "hello" using a Caesar Shift Cipher, it would work like this:
+{: .notice}
 
 |            | H   | E   | L   | L   | O   |
 |:-:         |:-:  |:-:  |:-:  |:-:  |:-:  |
