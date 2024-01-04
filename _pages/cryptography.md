@@ -11,10 +11,9 @@ og_image: og_image.png
 <script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script>
 <script>
 sagecell.makeSagecell({inputLocation: '.sage',
-					   template:	  sagecell.templates.restricted,
-					   hide: 		  [fullScreen]});
+					   template:	  sagecell.templates.restricted});
 </script>
-<link rel="stylesheet" type="text/css" href="https://sagecell.sagemath.org/static/sagecell_embed.cs">
+<link rel="stylesheet" type="text/css" href="https://discovermaths.uk/files/sagecell_embed.css">
 
 This is a test of embedding SageMathCell to a webpage!
 
@@ -22,6 +21,6 @@ This is a test of embedding SageMathCell to a webpage!
 	<pre><script type="text/x-sage">
 for i in range(26):
 	x = (2 * i) % 26
-	print(x)
+	print(i, "mod 26 =", x)
 	</script></pre>
 </div>
