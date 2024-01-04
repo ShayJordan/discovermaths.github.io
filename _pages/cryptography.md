@@ -27,7 +27,7 @@ In order to use any of the encryption techniques we looked at in the workshop, w
 | N | O | P | Q | R | S | T | U | V | W | X | Y | Z |
 | 13 | 14 | 15 | 16 | 17 | 18 | 19 | 20 | 21 | 22 | 23 | 24 | 25 |
 
-**Example**{: .notice}
+<div>**Example**
 
 If we wanted to encode the word "hello", for example, we would do so by replacing the letters by their corresponding numbers in the table above:
 
@@ -35,7 +35,7 @@ If we wanted to encode the word "hello", for example, we would do so by replacin
 |:-:|:-:|:-:|:-:|:-:|
 | 7 | 4 | 11 | 11 | 14 |
 
-So the word "hello" is encoded to 7 4 11 11 14.
+So the word "hello" is encoded to 7 4 11 11 14.</div>{: .notice}
 
 # Encrypting and Decrypting
 
@@ -50,7 +50,7 @@ Caesar Shift Ciphers are named after Julius Caesar, the roman emperor, who encry
 3. Add the key number to each number (shift).
 4. Convert your message back to letters (decode).
 
-**Example**{: .notice}
+<div>**Example**
 
 If we choose the key number to be 15 and want to encrypt the plaintext "hello" using a Caesar Shift Cipher, it would work like this:
 
@@ -61,6 +61,7 @@ If we choose the key number to be 15 and want to encrypt the plaintext "hello" u
 | Encrypted  | 22  | 19  | 26  | 26  | 29  |
 | Mod 26     | 22  | 19  | 0   | 0   | 3   |
 | Ciphertext | W   | T   | A   | A   | D   |
+</div>{: .notice}
 
 This is a test of embedding SageMathCell to a webpage!
 
