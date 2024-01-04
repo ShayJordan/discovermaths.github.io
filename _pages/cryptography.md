@@ -5,7 +5,7 @@ excerpt: "A summary of the content covered in the Discover Maths Cryptography wo
 header:
   overlay_image: projects.JPG
   overlay_filter: rgba(51, 51, 90, 0.75)
-author_profile: false
+author_profile: true
 og_image: og_image.png
 ---
 <script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script>
