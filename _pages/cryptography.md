@@ -20,6 +20,7 @@ sagecell.makeSagecell({inputLocation: '.sage',
 
 In order to use any of the encryption techniques we looked at in the workshop, we first needed to *encode* our plaintext message from letters into numbers. This is the basic encoding we used in the workshops:
 
+||||||||||||||
 |:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
 | A | B | C | D | E | F | G | H | I | J | K | L | M |
 | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 |
