@@ -1,7 +1,7 @@
 ---
 permalink: /cryptography/
 title: "Cryptography"
-excerpt: ""
+excerpt: "A summary of the content covered in the Discover Maths Cryptography workshop."
 header:
   overlay_image: projects.JPG
   overlay_filter: rgba(51, 51, 90, 0.75)
@@ -15,6 +15,8 @@ sagecell.makeSagecell({inputLocation: '.sageread',
 sagecell.makeSagecell({inputLocation: '.sage'});
 </script>
 <link rel="stylesheet" type="text/css" href="https://discovermaths.uk/files/sagecell_embed.css">
+
+Thank you for attending the Discover Maths Cryptography workshop -- we hope you enjoyed it and discovered some interesting new ways that the maths you're learning in the classroom can be applied in the real world. Here is a recap of some of the content we covered in the workshop, in case you want to come back to it...
 
 ## Encoding and Decoding
 
