@@ -49,10 +49,6 @@
     max-height: 14em !important;
 }
 
-.sagecell .CodeMirror-fullscreen .CodeMirror-scroll {
-    max-height: none !important;
-}
-
 .sagecell .CodeMirror-hints {
     padding-right: 10px !important;
 }
