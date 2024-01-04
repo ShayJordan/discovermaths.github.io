@@ -20,12 +20,11 @@ sagecell.makeSagecell({inputLocation: '.sage',
 
 In order to use any of the encryption techniques we looked at in the workshop, we first needed to *encode* our plaintext message from letters into numbers. This is the basic encoding we used in the workshops:
 
-| <div style="width:7.6923%">A</div> | <div style="width:7.6923%">B</div> | <div style="width:7.6923%">C</div> | <div style="width:7.6923%">D</div> | <div style="width:7.6923%">E</div> | <div style="width:7.6923%">F</div> | <div style="width:7.6923%">G</div> | <div style="width:7.6923%">H</div> | <div style="width:7.6923%">I</div> | <div style="width:7.6923%">J</div> | <div style="width:7.6923%">K</div> | <div style="width:7.6923%">L</div> | <div style="width:7.6923%">M</div> | 
+| 26-letter alphabet encoding table |||||||||||||
 |:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
+| A | B | C | D | E | F | G | H | I | J | K | L | M |
 | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 |
-
-| <div style="width:7.6923%">N</div> | <div style="width:7.6923%">O</div> | <div style="width:7.6923%">P</div> | <div style="width:7.6923%">Q</div> | <div style="width:7.6923%">R</div> | <div style="width:7.6923%">S</div> | <div style="width:7.6923%">T</div> | <div style="width:7.6923%">U</div> | <div style="width:7.6923%">V</div> | <div style="width:7.6923%">W</div> | <div style="width:7.6923%">X</div> | <div style="width:7.6923%">Y</div> | <div style="width:7.6923%">Z</div> |
-|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
+| N | O | P | Q | R | S | T | U | V | W | X | Y | Z |
 | 13 | 14 | 15 | 16 | 17 | 18 | 19 | 20 | 21 | 22 | 23 | 24 | 25 |
 
 This is a test of embedding SageMathCell to a webpage!
