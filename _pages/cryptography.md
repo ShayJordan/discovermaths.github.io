@@ -52,7 +52,7 @@ Caesar Shift Ciphers are named after Julius Caesar, the Roman emperor, who encry
 1. Convert your message into numbers (encode).
 2. Choose a key number.
 3. Add the key number to each number (shift).
-4. Reduce the numbers modulo 26.
+4. Reduce the numbers mod 26.
 5. Convert your message back to letters (decode).
 
 **Example:** If we choose the key number to be 15 and want to encrypt the plaintext "hello" using a Caesar Shift Cipher, it would work like this:
@@ -69,7 +69,7 @@ Caesar Shift Ciphers are named after Julius Caesar, the Roman emperor, who encry
 So the plaintext "hello" is encrypted to the ciphertext "wtaad".
 {: .notice}
 
-If you know what they encryption key was, you just work backwards to decrypt (encode the ciphertext, subtract the key, reduce modulo 26, and then decode). If you *don't* know the shift key, you might need to use a bit of [frequency analysis](https://crypto.interactive-maths.com/frequency-analysis-breaking-the-code.html) or knowledge of common word endings, letter combinations or short words within the language you're working in to figure out the key.
+If you know what they encryption key was, you just work backwards to decrypt (encode the ciphertext, subtract the key, reduce mod 26, and then decode). If you *don't* know the shift key, you might need to use a bit of [frequency analysis](https://crypto.interactive-maths.com/frequency-analysis-breaking-the-code.html) or knowledge of common word endings, letter combinations or short words within the language you're working in to figure out the key.
 
 ### Affine Ciphers
 
@@ -91,7 +91,7 @@ So the plaintext "hello" is encrypted to the ciphertext "xojjs".
 
 Decrypting affine ciphers is more complex. We're used to being able to find inverses of functions quite easily by working backwards and applying the inverses of each individual operation in the function in reverse BIDMAS order. Using our prior knowledge of functions, we could find the inverse of the function $3x+2$ to be $\frac{1}{3}(x-2)$. 
 
-Unfortunately when working Modulo 26 (or Modulo anything for that matter), fractions don't exist -- we only have the integers from 0 to 25 (or 0 to $n-1$ for Mod $n$). With this, we need to find the *multiplicative inverse* of 3 mod 26 in order to find the decrypying function; that is, the number we can multiply by 3 to get 1 mod 26. This can be found quite easily, as $3\times9=27\equiv1\text{ mod }26$. This means that the inverse function would actually be $9(x-2)$ or $9x-18$ if we expand it.
+Unfortunately when working mod 26 (or mod anything for that matter), fractions don't exist -- we only have the integers from 0 to 25 (or 0 to $n-1$ for mod $n$). With this, we need to find the *multiplicative inverse* of 3 mod 26 in order to find the decrypying function; that is, the number we can multiply by 3 to get 1 mod 26. This can be found quite easily, as $3\times9=27\equiv1\text{ mod }26$. This means that the inverse function would actually be $9(x-2)$ or $9x-18$ if we expand it.
 
 **Example:** We can work backwards from the ciphertext we found above to check this is correct.
 {: .notice}
@@ -133,7 +133,7 @@ for i in range(26):
 <br>
 You'll notice that the ciphertext alphabet begins to repeat itself halfway through, which means that if the letters *a* and *n* both encrypt to *a*, so it would be impossible to decrypt a message encoded by this affine cipher or any affine cipher which uses a non-invertible.
 
-Have a play around with the code above and chance the 2 to any other non-invertible number modulo 26 (2, 4, 6, 8, 10, 12, 13, 14, 16, 18, 20, 22, 24, or 26) and you'll see a similar outcome of a repeated alphabet.
+Have a play around with the code above and chance the 2 to any other non-invertible number mod 26 (2, 4, 6, 8, 10, 12, 13, 14, 16, 18, 20, 22, 24, or 26) and you'll see a similar outcome of a repeated alphabet.
 
 ### Vigenère Cipher
 
@@ -145,7 +145,7 @@ For a long time, the Vigenère Cipher was regarded to be unbreakable. It's very 
 4. Continue on until you reach the end of your password.
 5. Move back to the start of your password and shift the next letter of your encoded plaintext by the value of the first letter in the password (shift).
 6. Repeat steps 4 and 5 until your message has been encrypted.
-7. Reduce the numbers modulo 26.
+7. Reduce the numbers mod 26.
 8. Convert your message back to letters (decode).
 
 **Example:** If we choose the password to be "code" and want to encrypt the plaintext "Message" using a Caesar Shift Cipher, we would first encode our password:
