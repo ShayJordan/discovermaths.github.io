@@ -9,12 +9,13 @@ author_profile: false
 og_image: og_image.png
 ---
 <script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script>
-<script>sagecell.makeSagecell({editor: "sagecell.templates.restricted"});</script>
+<script>sagecell.makeSagecell({"inputLocation": ".sage",
+							   editor: "sagecell.templates.restricted"});</script>
 <link rel="stylesheet" type="text/css" href="https://discovermaths.uk/files/sagecell_embed.css">
 
 This is a test of embedding SageMathCell to a webpage!
 
-<div class="sage">
+<div class="sage">{hide: [fullScreen]}
 	<script type="text/x-sage">
 for i in range(26):
 	x = (2 * i) % 26
