@@ -17,7 +17,7 @@ sagecell.makeSagecell({inputLocation: '.sage',
 
 This is a test of embedding SageMathCell to a webpage!
 
-<div class="sage">{hide: [fullScreen]}
+<div class="sage">
 	<pre><script type="text/x-sage">
 for i in range(26):
 	x = (2 * i) % 26
