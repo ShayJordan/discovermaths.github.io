@@ -114,6 +114,7 @@ for i in Zmod(26).list_of_elements_of_multiplicative_group():
 	</script></pre>
 </div>
 
+<br>
 The reason we can't use a non-invertible / irreducible number for $a$ in an affine cipher can be seen when we try the affine cipher $2x$. If we encrypt the encoded alphabet (numbers 0-25), we get the ciphertext alphabet which is shown by the following SageMath code:
 
 <div class="sage">
@@ -124,6 +125,7 @@ for i in range(26):
 	</script></pre>
 </div>
 
+<br>
 You'll notice that the ciphertext alphabet begins to repeat itself halfway through, which means that if the letters *a* and *n* both encrypt to *a*, so it would be impossible to decrypt a message encoded by this affine cipher or any affine cipher which uses a non-invertible.
 
 Have a play around with the code above and chance the 2 to any other non-invertible number modulo 26 (2, 4, 6, 8, 10, 12, 13, 14, 16, 18, 20, 22, 24, or 26) and you'll see a similar outcome of a repeated alphabet.
