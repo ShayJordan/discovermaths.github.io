@@ -7,12 +7,12 @@ header:
   overlay_filter: rgba(51, 51, 90, 0.75)
 author_profile: false
 og_image: og_image.png
-toc: true
 ---
 <script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script>
 <script>
-sagecell.makeSagecell({inputLocation: '.sage',
+sagecell.makeSagecell({inputLocation: '.sageread',
 					   template:	  sagecell.templates.restricted});
+sagecell.makeSagecell({inputLocation: '.sage'});
 </script>
 <link rel="stylesheet" type="text/css" href="https://discovermaths.uk/files/sagecell_embed.css">
 
@@ -61,7 +61,7 @@ Caesar Shift Ciphers are named after Julius Caesar, the Roman emperor, who encry
 | **Mod 26**     | 22  | 19  | 0   | 0   | 3   |
 | **Ciphertext** | W   | T   | A   | A   | D   |
 
-So "hello" would encrypt to the ciphertext "wtaad".
+So "hello" is encrypted to the ciphertext "wtaad".
 {: .notice}
 
 If you know what they encryption key was, you just work backwards to decrypt (encode the ciphertext, subtract the key, reduce modulo 26, and then decode). If you *don't* know the shift key, you might need to use a bit of [frequency analysis](https://crypto.interactive-maths.com/frequency-analysis-breaking-the-code.html) or knowledge of common word endings, letter combinations or short words within the language you're working in to figure out the key.
@@ -81,10 +81,40 @@ An affine cipher is like a Caesar shift cipher, but with an added layer of compl
 | **Mod 26**           | 23  | 14  | 9   | 9   | 18  |
 | **Ciphertext**       | X   | O   | J   | J   | S   |
 
-So "hello" would encrypt to the ciphertext "xojjs".
+So "hello" is encrypted to the ciphertext "xojjs".
 {: .notice}
 
-This is a test of embedding SageMathCell to a webpage!
+Decrypting affine ciphers is more complex. We're used to being able to find inverses of functions quite easily by working backwards and applying the inverses of each individual operation in the function in reverse BIDMAS order. Using our prior knowledge of functions, we could find the inverse of the function $3x+2$ to be $\frac{1}{3}(x-2)$. 
+
+Unfortunately when working Modulo 26 (or Modulo anything for that matter), fractions don't exist -- we only have the integers from 0 to 25 (or 0 to $n-1$ for Mod $n$). With this, we need to find the *multiplicative inverse* of 3 mod 26 in order to find the decrypying function; that is, the number we can multiply by 3 to get 1 mod 26. This can be found quite easily, as $3*9=27\equiv1\text{ mod }26$. This means that the inverse function would actually be $9(x-2)$ or $9x-18$ if we expand it.
+
+**Example:** We can work backwards from the ciphertext we found above to check this is correct.
+{: .notice}
+
+|                      | X   | O   | J   | J   | S   |
+|:-:                   |:-:  |:-:  |:-:  |:-:  |:-:  |
+| **Encoded ($x$)**    | 23  | 14  | 9   | 9   | 18  |
+| **$9x$**             | 207  | 126  | 81  | 81  | 162  |
+| **$-18$**             | 189  | 108  | 63  | 63  | 144  |
+| **Mod 26**           | 7   | 4   | 11  | 11  | 14  |
+| **Plaintext**        | H   | E   | L   | L   | O   |
+
+So the decrpyion key which corresponds to the encryption $3x+2$ is $9x-18$.
+{: .notice}
+
+Not all affine ciphers are valid for encryption, as not all numbers are invertible (or reducible) mod 26. Only numbers which have no common factors with 26 have inverses and so whilst the $b$ in $ax+b$ can be anything, the $a$ must only be invertible / reducible mod 26 when working with a basic 26-letter alphabet (i.e. working mod 26).
+
+The following SageMath code computes the inverses of each of the invertible / reducible numbers mod 26.
+
+<div class="sageread">
+	<pre><script type="text/x-sage">
+for i in Zmod(26).list_of_elements_of_multiplicative_group():
+    x = inverse_mod(i,26)
+    print("Inverse of", i, "is", x)
+	</script></pre>
+</div>
+
+The reason we can't use a non-invertible / irreducible number for $a$ in an affine cipher can be seen when we try the affine cipher $2x$. If we encrypt the encoded alphabet (numbers 0-25), we get the ciphertext alphabet which is shown by the following SageMath code:
 
 <div class="sage">
 	<pre><script type="text/x-sage">
@@ -94,10 +124,6 @@ for i in range(26):
 	</script></pre>
 </div>
 
-<div class="sage">
-	<pre><script type="text/x-sage">
-for i in (1,3,5,7,11,17,25):
-    x = inverse_mod(i,26)
-    print("Inverse of", i, "is", x)
-	</script></pre>
-</div>
+You'll notice that the ciphertext alphabet begins to repeat itself halfway through, which means that if the letters *a* and *n* both encrypt to *a*, so it would be impossible to decrypt a message encoded by this affine cipher or any affine cipher which uses a non-invertible.
+
+Have a play around with the code above and chance the 2 to any other non-invertible number modulo 26 (2, 4, 6, 8, 10, 12, 13, 14, 16, 18, 20, 22, 24, or 26) and you'll see a similar outcome of a repeated alphabet.
