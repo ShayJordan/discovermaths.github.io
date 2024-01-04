@@ -48,7 +48,8 @@ Caesar Shift Ciphers are named after Julius Caesar, the Roman emperor, who encry
 1. Convert your message into numbers (encode).
 2. Choose a key number.
 3. Add the key number to each number (shift).
-4. Convert your message back to letters (decode).
+4. Reduce the numbers modulo 26.
+5. Convert your message back to letters (decode).
 
 **Example:** If we choose the key number to be 15 and want to encrypt the plaintext "hello" using a Caesar Shift Cipher, it would work like this:
 {: .notice}
@@ -134,14 +135,13 @@ Have a play around with the code above and chance the 2 to any other non-inverti
 
 For a long time, the Vigenère Cipher was regarded to be unbreakable. It's very simple to encrypt something using this cipher, but unless you know the key, it's very difficult to decrypt. The Vigenère Cipher works as follows:
 
-1. Convert your message into numbers (encode).
-2. Choose a password.
-3. Encode your password.
-4. Shift the first letter of your encoded plaintext by the value of the first letter in the password (shift).
-4. Shift the second letter of your encoded plaintext by the value of the second letter in the password (shift).
-5. Continue on until you reach the end of your password.
-6. Move back to the start of your password and shift the next letter of your encoded plaintext by the value of the first letter in the password (shift).
-7. Repeat steps 5 and 6 until your message has been encrypted.
+1. Choose a password and encode it.
+2. Convert your message into numbers (encode).
+3. Shift the $n^{th}$ letter of your encoded plaintext by the value of the $n^{th}$ letter in the password (shift).
+4. Continue on until you reach the end of your password.
+5. Move back to the start of your password and shift the next letter of your encoded plaintext by the value of the first letter in the password (shift).
+6. Repeat steps 4 and 5 until your message has been encrypted.
+7. Reduce the numbers modulo 26.
 8. Convert your message back to letters (decode).
 
 **Example:** If we choose the password to be "code" and want to encrypt the plaintext "Message" using a Caesar Shift Cipher, we would first encode our password:
