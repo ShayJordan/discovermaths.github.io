@@ -24,7 +24,7 @@ In order to use any of the encryption techniques we looked at in the workshop, w
 	<a href="/images/encoding-table-1.png"><img src="/images/encoding-table-1.png"></a>
 </figure>
 <figure>
-	<a href="encoding-table-2.png"><img src="/images/encoding-table-2.png"></a>
+	<a href="/images/encoding-table-2.png"><img src="/images/encoding-table-2.png"></a>
 </figure>
 
 **Example:** If we wanted to encode the word "hello", for example, we would do so by replacing the letters by their corresponding numbers in the table above:
