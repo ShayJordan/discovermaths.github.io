@@ -16,7 +16,7 @@ sagecell.makeSagecell({inputLocation: '.sage'});
 </script>
 <link rel="stylesheet" type="text/css" href="https://discovermaths.uk/files/sagecell_embed.css">
 
-# Encoding and Decoding
+## Encoding and Decoding
 
 In order to use any of the encryption techniques we looked at in the workshop, we first needed to *encode* our plaintext message from letters into numbers. This is the basic encoding we used in the workshops:
 
@@ -37,11 +37,11 @@ In order to use any of the encryption techniques we looked at in the workshop, w
 So the word "hello" is encoded to 7 4 11 11 14.
 {: .notice}
 
-# Encrypting and Decrypting
+## Encrypting and Decrypting
 
 In the workshop, we looked at a few different methods of encryption and their respective methods of decryption. Here's a reminder of the ones we looked at and their methods:
 
-## Caesar Shift Ciphers
+### Caesar Shift Ciphers
 
 Caesar Shift Ciphers are named after Julius Caesar, the Roman emperor, who encrypted secret messages to his army generals in this way. This is how it's done:
 
@@ -66,7 +66,7 @@ So "hello" is encrypted to the ciphertext "wtaad".
 
 If you know what they encryption key was, you just work backwards to decrypt (encode the ciphertext, subtract the key, reduce modulo 26, and then decode). If you *don't* know the shift key, you might need to use a bit of [frequency analysis](https://crypto.interactive-maths.com/frequency-analysis-breaking-the-code.html) or knowledge of common word endings, letter combinations or short words within the language you're working in to figure out the key.
 
-## Affine Ciphers
+### Affine Ciphers
 
 An affine cipher is like a Caesar shift cipher, but with an added layer of complexity. Instead of shifting everything by a constant value, we shift by an *affine* function in the form $ax+b$.
 
@@ -129,3 +129,7 @@ for i in range(26):
 You'll notice that the ciphertext alphabet begins to repeat itself halfway through, which means that if the letters *a* and *n* both encrypt to *a*, so it would be impossible to decrypt a message encoded by this affine cipher or any affine cipher which uses a non-invertible.
 
 Have a play around with the code above and chance the 2 to any other non-invertible number modulo 26 (2, 4, 6, 8, 10, 12, 13, 14, 16, 18, 20, 22, 24, or 26) and you'll see a similar outcome of a repeated alphabet.
+
+### Vigenère Cipher
+
+### Public Key Cryptography: RSA
