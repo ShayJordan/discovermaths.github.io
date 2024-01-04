@@ -11,9 +11,10 @@ og_image: og_image.png
 <script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script>
 <script>
 sagecell.makeSagecell({inputLocation: '.sage',
-					   template:	  sagecell.templates.restricted});
+					   template:	  sagecell.templates.restricted,
+					   hide: 		  [fullScreen]});
 </script>
-<link rel="stylesheet" type="text/css" href="https://discovermaths.uk/files/sagecell_embed.css">
+<link rel="stylesheet" type="text/css" href="https://sagecell.sagemath.org/static/sagecell_embed.cs">
 
 This is a test of embedding SageMathCell to a webpage!
 
