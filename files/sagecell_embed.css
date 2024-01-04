@@ -384,6 +384,8 @@
 
 .sagecell_fullScreen {
     position: absolute !important;
+	height: 0px !important;
+	width: 0px !important;
     right: 0em !important;
     top: 0em !important;
     z-index: 0 !important;
@@ -466,8 +468,7 @@
 }
 
 .sagecell .sagecell-templates .hide {
- display: none !important;  
- fullScreen !important; 
+ display: none !important;   
 }
 
 .sagecell .sagecell-templates .pull-right {
