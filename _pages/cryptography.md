@@ -7,6 +7,7 @@ header:
   overlay_filter: rgba(51, 51, 90, 0.75)
 author_profile: false
 og_image: og_image.png
+toc: true
 ---
 <script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script>
 <script>
@@ -18,9 +19,11 @@ sagecell.makeSagecell({inputLocation: '.sage',
 This is the basic encoding we used in the workshop, to convert letters to numbers:
 
 | A | B | C | D | E | F | G | H | I | J | K | L | M | 
+|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
 | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 |
-
+|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
 | N | O | P | Q | R | S | T | U | V | W | X | Y | Z |
+|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
 | 13 | 14 | 15 | 16 | 17 | 18 | 19 | 20 | 21 | 22 | 23 | 24 | 25 |
 
 This is a test of embedding SageMathCell to a webpage!
