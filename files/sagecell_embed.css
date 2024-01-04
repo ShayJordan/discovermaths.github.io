@@ -383,7 +383,7 @@
 }
 
 .sagecell_fullScreen {
-    position: sticky !important;
+    position: static !important;
 	height: 0px !important;
 	width: 0px !important;
     right: 0em !important;
