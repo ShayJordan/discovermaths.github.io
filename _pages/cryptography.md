@@ -15,11 +15,9 @@ og_image: og_image.png
 This is a test of embedding SageMathCell to a webpage.
 
 <div class="sage">
-	<script type="text/x-sage">
+	<script type="text/x-sage" id="mycode">
 		for i in range(26):
-		
 			x = (2 * i) % 26
-			
 			print(x)
 	</script>
 </div>
