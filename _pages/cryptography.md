@@ -27,6 +27,14 @@ In order to use any of the encryption techniques we looked at in the workshop, w
 | N | O | P | Q | R | S | T | U | V | W | X | Y | Z |
 | 13 | 14 | 15 | 16 | 17 | 18 | 19 | 20 | 21 | 22 | 23 | 24 | 25 |
 
+If we wanted to encode the word "hello", for example, we would do so by replacing the letters by their corresponding numbers in the table above:
+
+| H | E | L | L | O |
+|:-:|:-:|:-:|:-:|:-:|
+| 7 | 4 | 11 | 11 | 14 |
+
+So the word "hello" is encoded to 7 4 11 11 14.
+
 This is a test of embedding SageMathCell to a webpage!
 
 <div class="sage">
