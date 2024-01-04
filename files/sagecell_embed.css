@@ -49,6 +49,10 @@
     max-height: 14em !important;
 }
 
+.sagecell .CodeMirror-fullscreen .CodeMirror-scroll {
+    max-height: none !important;
+}
+
 .sagecell .CodeMirror-hints {
     padding-right: 10px !important;
 }
@@ -376,6 +380,15 @@
     float: right !important;
     text-align: right !important;
     font-size: 80% !important;
+}
+
+.sagecell_fullScreen {
+    position: absolute !important;
+    right: 1.5em !important;
+    top: 0.5em !important;
+    z-index: 10 !important;
+    padding: 2px !important;
+    color: rgb(128,128,128) !important;
 }
 
 .sagecell_editor div.ui-accordion-content.ui-helper-reset {
