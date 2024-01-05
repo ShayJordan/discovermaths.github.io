@@ -20,6 +20,8 @@ Thank you for attending the Discover Maths Cryptography workshop -- we hope you 
 
 Here is a recap of some of the content we covered in the workshop, in case you want to come back to it...
 
+{% include toc %}
+
 ## Encoding and Decoding
 
 In order to use any of the encryption techniques we looked at in the workshop, we first needed to encode our plaintext message from letters into numbers. This is the basic encoding we used in the workshops:
