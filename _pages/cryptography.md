@@ -127,16 +127,17 @@ The reason we can't use a non-invertible / irreducible number for $a$ in an affi
 
 <div class="sage">
 	<pre><script type="text/x-sage">
+a = 2
 for i in range(26):
-	x = (2 * i) % 26
-	print("2 ×", i, "mod 26 =", x)
+	x = (a * i) % 26
+	print(a, "×", i, "mod 26 =", x)
 	</script></pre>
 </div>
 
 <br>
 You'll notice that the ciphertext alphabet begins to repeat itself halfway through, which means that if the letters *a* and *n* both encrypt to *a*, so it would be impossible to decrypt a message encoded by this affine cipher or any affine cipher which uses a non-invertible.
 
-Have a play around with the code above and chance the 2 to any other non-invertible number mod 26 (2, 4, 6, 8, 10, 12, 13, 14, 16, 18, 20, 22, 24, or 26) and you'll see a similar outcome of a repeated alphabet.
+Have a play around with the code above and change the value of $a$ to any other non-invertible number mod 26 (2, 4, 6, 8, 10, 12, 13, 14, 16, 18, 20, 22, 24, or 26) and you'll see a similar outcome of a repeated alphabet.
 
 ### Vigenère Cipher
 
