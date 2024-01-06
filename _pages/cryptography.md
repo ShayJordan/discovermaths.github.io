@@ -106,7 +106,7 @@ Unfortunately when working mod 26 (or mod anything for that matter), fractions d
 | **Mod 26**           | 7   | 4   | 11  | 11  | 14  |
 | **Plaintext**        | H   | E   | L   | L   | O   |
 
-So the decrpyion key which corresponds to the encryption $3x+2$ is $9x-18$.
+So the decryption key which corresponds to the encryption $3x+2$ is $9x-18$.
 {: .notice}
 
 Not all affine ciphers are valid for encryption, as not all numbers are invertible (or reducible) mod 26. Only numbers which have no common factors with 26 have inverses and so whilst the $b$ in $ax+b$ can be anything, the $a$ must only be invertible / reducible mod 26 when working with a basic 26-letter alphabet (i.e. working mod 26).
@@ -128,7 +128,7 @@ The reason we can't use a non-invertible / irreducible number for $a$ in an affi
 	<pre><script type="text/x-sage">
 for i in range(26):
 	x = (2 * i) % 26
-	print(i, "mod 26 =", x)
+	print("2 $\times$" i, "mod 26 =", x)
 	</script></pre>
 </div>
 
