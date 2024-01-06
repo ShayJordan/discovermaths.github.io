@@ -135,7 +135,7 @@ for i in range(26):
 </div>
 
 <br>
-You'll notice that the ciphertext alphabet begins to repeat itself halfway through, which means that if the letters *a* and *n* both encrypt to *a*, so it would be impossible to decrypt a message encoded by this affine cipher or any affine cipher which uses a non-invertible.
+You'll notice that the ciphertext alphabet begins to repeat itself halfway through, which means that if the plaintext letters *a* (0) and *n* (13) both encrypt to the ciphertext letter *a*, so it would be impossible to decrypt a message encoded by this affine cipher or any affine cipher which uses a non-invertible.
 
 Have a play around with the code above and change the value of $a$ to any other non-invertible number mod 26 (2, 4, 6, 8, 10, 12, 13, 14, 16, 18, 20, 22, 24, or 26) and you'll see a similar outcome of a repeated alphabet.
 
