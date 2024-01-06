@@ -12,8 +12,7 @@ og_image: og_image.png
 <script>
 sagecell.makeSagecell({inputLocation: '.sageread',
 					   template:	  sagecell.templates.restricted});
-sagecell.makeSagecell({inputLocation: '.sage',
-             hide:           [permalink]});
+sagecell.makeSagecell({inputLocation: '.sage'});
 </script>
 <link rel="stylesheet" type="text/css" href="https://discovermaths.uk/files/sagecell_embed.css">
 
@@ -129,7 +128,7 @@ The reason we can't use a non-invertible / irreducible number for $a$ in an affi
 	<pre><script type="text/x-sage">
 for i in range(26):
 	x = (2 * i) % 26
-	print("2 x" i, "mod 26 =", x)
+	print("2 ×" i, "mod 26 =", x)
 	</script></pre>
 </div>
 
