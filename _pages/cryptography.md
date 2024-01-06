@@ -12,7 +12,8 @@ og_image: og_image.png
 <script>
 sagecell.makeSagecell({inputLocation: '.sageread',
 					   template:	  sagecell.templates.restricted});
-sagecell.makeSagecell({inputLocation: '.sage'});
+sagecell.makeSagecell({inputLocation: '.sage',
+             hide:          ['permalink']});
 </script>
 <link rel="stylesheet" type="text/css" href="https://discovermaths.uk/files/sagecell_embed.css">
 
