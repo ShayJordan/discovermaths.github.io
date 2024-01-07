@@ -39,9 +39,9 @@
 <!--      {% if page.excerpt %}
         <p class="page__lead">{{ page.excerpt | markdownify | remove: "<p>" | remove: "</p>" }}</p> 
       {% endif %} -->
-	  {% if page.date %}
+<!--	  {% if page.date %}
 	     <p class="page__date"><font color="white"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Published:" }}</strong> <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | default: "1900-01-01" | date: "%B %d, %Y" }}</time></font></p>
-      {% endif %}
+      {% endif %} -->
       {% if site.read_time or page.read_time %}
         <p class="page__date"><font color="white"><i class="fa fa-fw fa-clock" aria-hidden="true"></i> {% include read-time.html %}</font></p>
       {% endif %}
