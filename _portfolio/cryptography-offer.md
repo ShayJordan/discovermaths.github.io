@@ -7,7 +7,6 @@ excerpt: "The Discover Cryptography program introduces students to modular arith
 header:
   overlay_image: projects.JPG
   overlay_filter: rgba(51, 51, 90, 0.75)
-author_profile: false
 og_image: og_image.png
 layout: single
 ---
