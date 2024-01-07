@@ -12,7 +12,8 @@ og_image: og_image.png
 <script>
 sagecell.makeSagecell({inputLocation: '.sageread',
 					   template:	  sagecell.templates.restricted});
-sagecell.makeSagecell({inputLocation: '.sage'});
+sagecell.makeSagecell({inputLocation: '.sage',
+             hide:          ['permalink']});
 </script>
 <link rel="stylesheet" type="text/css" href="https://discovermaths.uk/files/sagecell_embed.css">
 
@@ -106,7 +107,7 @@ Unfortunately when working mod 26 (or mod anything for that matter), fractions d
 | **Mod 26**           | 7   | 4   | 11  | 11  | 14  |
 | **Plaintext**        | H   | E   | L   | L   | O   |
 
-So the decrpyion key which corresponds to the encryption $3x+2$ is $9x-18$.
+So the decryption key which corresponds to the encryption $3x+2$ is $9x-18$.
 {: .notice}
 
 Not all affine ciphers are valid for encryption, as not all numbers are invertible (or reducible) mod 26. Only numbers which have no common factors with 26 have inverses and so whilst the $b$ in $ax+b$ can be anything, the $a$ must only be invertible / reducible mod 26 when working with a basic 26-letter alphabet (i.e. working mod 26).
@@ -126,16 +127,17 @@ The reason we can't use a non-invertible / irreducible number for $a$ in an affi
 
 <div class="sage">
 	<pre><script type="text/x-sage">
+a = 2
 for i in range(26):
-	x = (2 * i) % 26
-	print(i, "mod 26 =", x)
+	x = (a * i) % 26
+	print(a, "×", i, "mod 26 =", x)
 	</script></pre>
 </div>
 
 <br>
-You'll notice that the ciphertext alphabet begins to repeat itself halfway through, which means that if the letters *a* and *n* both encrypt to *a*, so it would be impossible to decrypt a message encoded by this affine cipher or any affine cipher which uses a non-invertible.
+You'll notice that the ciphertext alphabet begins to repeat itself halfway through, which means that if the plaintext letters *a* (0) and *n* (13) both encrypt to the ciphertext letter *a* (0), so it would be impossible to decrypt a message encoded by this affine cipher or any affine cipher which uses a non-invertible.
 
-Have a play around with the code above and chance the 2 to any other non-invertible number mod 26 (2, 4, 6, 8, 10, 12, 13, 14, 16, 18, 20, 22, 24, or 26) and you'll see a similar outcome of a repeated alphabet.
+Have a play around with the code above and change the value of $a$ to any other non-invertible number mod 26 (2, 4, 6, 8, 10, 12, 13, 14, 16, 18, 20, 22, 24, or 26) and you'll see a similar outcome of a repeated alphabet.
 
 ### Vigenère Cipher
 
