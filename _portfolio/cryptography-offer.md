@@ -14,3 +14,5 @@ layout: single
 The Discover Cryptography program intruduces students to modular arithmetic as a gateway to various methods of public key cryptography, and touches on the workings of state-of-the-art private key cryptography methods such as RSA.
 
 Students should be comfortable with addition, subtraction, multiplication, and finding remainders when dividing as a prerequisite to this workshop. Click [here](/dm-cryptography/) for an insight of some of the content covered in the workshop.
+
+[Get in contact](mailto:hello@discovermaths.uk) to enquire about attending one of our events or booking an event at your institution.

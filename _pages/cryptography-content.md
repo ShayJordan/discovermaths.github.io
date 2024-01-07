@@ -17,6 +17,9 @@ sagecell.makeSagecell({inputLocation: '.sage',
 </script>
 <link rel="stylesheet" type="text/css" href="https://discovermaths.uk/files/sagecell_embed.css">
 
+For information on our Discover Cryptography program and how to book, click [here](/programs/dm-cryptography/).
+{: .notice--info}
+
 The Discover Cryptography workshop provides an insight into modular arithmetic as a gateway to various methods of public key cryptography, and touches on the workings of state-of-the-art private key cryptography methods such as RSA.
 
 Here is an insight to some of the content covered in the workshop...
@@ -175,3 +178,6 @@ So the plaintext "message" is encrypted to the ciphertext "osvwcuh".
 {: .notice}
 
 ### Public Key Cryptography: RSA
+
+For information on our Discover Cryptography program and how to book, click [here](/programs/dm-cryptography/).
+{: .notice--info}
