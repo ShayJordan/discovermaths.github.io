@@ -28,7 +28,7 @@ Here is an insight to some of the content covered in the workshop...
 
 ## Encoding and Decoding
 
-In order to use any of the encryption techniques we looked at in the workshop, we first needed to encode our plaintext message from letters into numbers. This is the basic encoding we used in the workshops:
+In order to use any of the encryption techniques in the workshop, we first needed to encode our plaintext message from letters into numbers. This is the basic encoding from the workshop:
 
 <figure>
 	<a href="/images/encoding-table-1.png"><img src="/images/encoding-table-1.png"></a>
@@ -49,7 +49,7 @@ So the plaintext "hello" is encoded to 7 4 11 11 14.
 
 ## Encrypting and Decrypting
 
-In the workshop, we looked at a few different methods of encryption and their respective methods of decryption. Here's a reminder of the ones we looked at and their methods:
+In the workshop, we look at a few different methods of encryption and their respective methods of decryption. Here's a summary of the ones we cover and their methods:
 
 ### Caesar Shift Ciphers
 
