@@ -28,7 +28,7 @@ Here is an insight to some of the content covered in the workshop...
 
 ## Encoding and Decoding
 
-In order to use any of the encryption techniques in the workshop, we first needed to encode our plaintext message from letters into numbers. This is the basic encoding from the workshop:
+In order to use any of the encryption techniques in the workshop, we first need to encode our plaintext message from letters into numbers. This is the basic encoding from the workshop:
 
 <figure>
 	<a href="/images/encoding-table-1.png"><img src="/images/encoding-table-1.png"></a>
