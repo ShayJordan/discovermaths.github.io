@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Discover Maths"
+title: "Hello!"
 excerpt: "We run Mathematics workshops to broaden students' perspectives in Mathematics."
 header:
   overlay_image: projects.JPG
